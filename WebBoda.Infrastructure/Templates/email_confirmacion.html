@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Confirmación de asistencia — Boda de Almudena e Ignacio</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f0e8; font-family:Georgia, 'Times New Roman', serif;">
+
+    <!-- WRAPPER EXTERIOR: fondo crema que se extiende a toda la ventana del cliente de correo -->
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f5f0e8;">
+        <tr>
+            <td align="center" style="padding:40px 16px;">
+
+                <!-- CONTENEDOR PRINCIPAL: ancho máximo 600px, fondo blanco roto -->
+                <table width="600" cellpadding="0" cellspacing="0" border="0"
+                       style="max-width:600px; width:100%; background-color:#fdfaf5;">
+
+                    <!-- ============================================================
+                         CABECERA: banda oscura con los nombres y la fecha
+                         Equivale visualmente al .pagina-header de los componentes
+                         ============================================================ -->
+                    <tr>
+                        <td align="center"
+                            style="background-color:#1a1a18; padding:48px 40px 40px;">
+
+                            <!-- Pretítulo -->
+                            <p style="margin:0 0 16px 0;
+                         font-family:Georgia, 'Times New Roman', serif;
+                         font-size:11px;
+                         font-weight:normal;
+                         letter-spacing:4px;
+                         text-transform:uppercase;
+                         color:#b89a6a;">
+                                Confirmación de asistencia
+                            </p>
+
+                            <!-- Nombres en serif cursiva, imitando el estilo del hero -->
+                            <h1 style="margin:0;
+                          font-family:Georgia, 'Times New Roman', serif;
+                          font-size:42px;
+                          font-weight:normal;
+                          font-style:italic;
+                          color:#fdfaf5;
+                          line-height:1.15;">
+                                Almudena &amp; Ignacio
+                            </h1>
+
+                            <!-- Separador dorado -->
+                            <p style="margin:20px auto 16px;
+                         font-size:10px;
+                         color:#b89a6a;
+                         letter-spacing:2px;">
+                                ◆
+                            </p>
+
+                            <!-- Fecha -->
+                            <p style="margin:0;
+                         font-family:Georgia, 'Times New Roman', serif;
+                         font-size:12px;
+                         font-weight:normal;
+                         letter-spacing:5px;
+                         color:rgba(255,255,255,0.45);">
+                                18 &middot; JULIO &middot; 2026
+                            </p>
+
+                        </td>
+                    </tr>
+
+                    <!-- ============================================================
+                         SALUDO Y MENSAJE PRINCIPAL
+                         ============================================================ -->
+                    <tr>
+                        <td style="padding:48px 48px 0;">
+
+                            <p style="margin:0 0 24px 0;
+                         font-family:Georgia, 'Times New Roman', serif;
+                         font-size:15px;
+                         font-weight:normal;
+                         color:#1a1a18;
+                         line-height:1.7;">
+                                Hola, <strong>{{NOMBRE}}</strong>,
+                            </p>
+
+                            <!-- Mensaje condicional según asistencia.
+                                 En el código C# sustituirás {{MENSAJE_ASISTENCIA}}
+                                 por el texto correspondiente según invitado.Asistencia -->
+                            <p style="margin:0;
+                         font-family:Georgia, 'Times New Roman', serif;
+                         font-size:15px;
+                         font-style:italic;
+                         color:#6b6560;
+                         line-height:1.8;">
+                                {{MENSAJE_ASISTENCIA}}
+                            </p>
+
+                        </td>
+                    </tr>
+
+                    <!-- ============================================================
+                         SEPARADOR DECORATIVO
+                         ============================================================ -->
+                    <tr>
+                        <td style="padding:36px 48px;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="border-top:1px solid #e8e2d9; font-size:0; line-height:0;">&nbsp;</td>
+                                    <td style="padding:0 16px;
+                              font-family:Georgia, serif;
+                              font-size:10px;
+                              color:#b89a6a;
+                              white-space:nowrap;">
+                                        ◆
+                                    </td>
+                                    <td style="border-top:1px solid #e8e2d9; font-size:0; line-height:0;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- ============================================================
+                         RESUMEN DE RESPUESTAS
+                         Tabla de datos con borde superior dorado, igual que las
+                         tarjetas .autobuses__item de la página de inicio
+                         ============================================================ -->
+                    <tr>
+                        <td style="padding:0 48px 48px;">
+
+                            <!-- Título de sección -->
+                            <p style="margin:0 0 24px 0;
+                         font-family:Georgia, 'Times New Roman', serif;
+                         font-size:11px;
+                         font-weight:normal;
+                         letter-spacing:4px;
+                         text-transform:uppercase;
+                         color:#b89a6a;">
+                                Resumen de tus respuestas
+                            </p>
+
+                            <!-- Tabla de datos -->
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                                   style="border-top:2px solid #b89a6a;">
+
+                                <!-- Fila: Nombre -->
+                                <tr>
+                                    <td style="padding:14px 0;
+                              border-bottom:1px solid #e8e2d9;
+                              font-family:Georgia, 'Times New Roman', serif;
+                              font-size:11px;
+                              letter-spacing:2px;
+                              text-transform:uppercase;
+                              color:#b89a6a;
+                              width:40%;">
+                                        Nombre
+                                    </td>
+                                    <td style="padding:14px 0;
+                              border-bottom:1px solid #e8e2d9;
+                              font-family:Georgia, 'Times New Roman', serif;
+                              font-size:14px;
+                              color:#1a1a18;">
+                                        {{NOMBRE}} {{APELLIDOS}}
+                                    </td>
+                                </tr>
+
+                                <!-- Fila: Email -->
+                                <tr>
+                                    <td style="padding:14px 0;
+                              border-bottom:1px solid #e8e2d9;
+                              font-family:Georgia, 'Times New Roman', serif;
+                              font-size:11px;
+                              letter-spacing:2px;
+                              text-transform:uppercase;
+                              color:#b89a6a;">
+                                        Email
+                                    </td>
+                                    <td style="padding:14px 0;
+                              border-bottom:1px solid #e8e2d9;
+                              font-family:Georgia, 'Times New Roman', serif;
+                              font-size:14px;
+                              color:#1a1a18;">
+                                        {{EMAIL}}
+                                    </td>
+                                </tr>
+
+                                <!-- Fila: Asistencia -->
+                                <!-- Sin border-bottom: cuando el invitado no asiste,
+                                     esta es la última fila visible de la tabla y
+                                     un borde inferior quedaría visualmente suelto.
+                                     Cuando sí asiste, el bloque IF_ASISTE añade más
+                                     filas con sus propios bordes superiores implícitos
+                                     gracias al padding y la separación visual. -->
+                                <tr>
+                                    <td style="padding:14px 0;
+                              font-family:Georgia, 'Times New Roman', serif;
+                              font-size:11px;
+                              letter-spacing:2px;
+                              text-transform:uppercase;
+                              color:#b89a6a;">
+                                        Asistencia
+                                    </td>
+                                    <td style="padding:14px 0;
+                              font-family:Georgia, 'Times New Roman', serif;
+                              font-size:14px;
+                              color:#1a1a18;">
+                                        {{ASISTENCIA}}
+                                    </td>
+                                </tr>
+
+                                <!-- Fila: Autobús de ida (solo si asiste) -->
+                                {{#IF_ASISTE}}
+                                <tr>
+                                    <td style="padding:14px 0;
+                              border-bottom:1px solid #e8e2d9;
+                              font-family:Georgia, 'Times New Roman', serif;
+                              font-size:11px;
+                              letter-spacing:2px;
+                              text-transform:uppercase;
+                              color:#b89a6a;">
+                                        Autobús de ida
+                                    </td>
+                                    <td style="padding:14px 0;
+                              border-bottom:1px solid #e8e2d9;
+                              font-family:Georgia, 'Times New Roman', serif;
+                              font-size:14px;
+                              color:#1a1a18;">
+                                        {{AUTOBUS_IDA}}
+                                    </td>
+                                </tr>
+
+                                <!-- Fila: Autobús de vuelta (solo si asiste) -->
+                                <tr>
+                                    <td style="padding:14px 0;
+                              border-bottom:1px solid #e8e2d9;
+                              font-family:Georgia, 'Times New Roman', serif;
+                              font-size:11px;
+                              letter-spacing:2px;
+                              text-transform:uppercase;
+                              color:#b89a6a;">
+                                        Autobús de vuelta
+                                    </td>
+                                    <td style="padding:14px 0;
+                              border-bottom:1px solid #e8e2d9;
+                              font-family:Georgia, 'Times New Roman', serif;
+                              font-size:14px;
+                              color:#1a1a18;">
+                                        {{AUTOBUS_VUELTA}}
+                                    </td>
+                                </tr>
+
+                                <!-- Fila: Condiciones alimentarias (solo si asiste) -->
+                                <tr>
+                                    <td style="padding:14px 0;
+                              font-family:Georgia, 'Times New Roman', serif;
+                              font-size:11px;
+                              letter-spacing:2px;
+                              text-transform:uppercase;
+                              color:#b89a6a;">
+                                        Condiciones aliment.
+                                    </td>
+                                    <td style="padding:14px 0;
+                              font-family:Georgia, 'Times New Roman', serif;
+                              font-size:14px;
+                              color:#1a1a18;">
+                                        {{CONDICIONES_ALIMENTARIAS}}
+                                    </td>
+                                </tr>
+                                {{/IF_ASISTE}}
+
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- ============================================================
+                         BLOQUE DE MODIFICACIÓN
+                         Fondo ligeramente más oscuro para destacar el enlace,
+                         similar al bloque de detalles de la página de inicio
+                         ============================================================ -->
+
+                    <tr>
+                        <td style="background-color:#1a1a18; padding:40px 48px;">
+
+                            <p style="margin:0 0 8px 0;
+                         font-family:Georgia, 'Times New Roman', serif;
+                         font-size:11px;
+                         letter-spacing:4px;
+                         text-transform:uppercase;
+                         color:#b89a6a;">
+                                ¿Necesitas modificar algo?
+                            </p>
+
+                            <p style="margin:0 0 24px 0;
+                         font-family:Georgia, 'Times New Roman', serif;
+                         font-size:14px;
+                         color:rgba(255,255,255,0.6);
+                         line-height:1.7;">
+                                Si necesitas cambiar alguna de tus respuestas antes del
+                                <strong style="color:rgba(255,255,255,0.85);">1 de junio de 2026</strong>,
+                                puedes hacerlo usando el siguiente enlace:
+                            </p>
+
+                            <!-- Botón de modificación, mismo estilo que .hero__cta -->
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="border:1px solid rgba(255,255,255,0.4);">
+                                        <a href="{{ENLACE_MODIFICACION}}"
+                                           style="display:inline-block;
+                              padding:14px 36px;
+                              font-family:Georgia, 'Times New Roman', serif;
+                              font-size:11px;
+                              letter-spacing:3px;
+                              text-transform:uppercase;
+                              color:#ffffff;
+                              text-decoration:none;">
+                                            Modificar mis respuestas
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- URL de respaldo por si el botón no se renderiza -->
+                            <p style="margin:16px 0 0 0;
+                         font-family:Georgia, 'Times New Roman', serif;
+                         font-size:11px;
+                         color:rgba(255,255,255,0.3);
+                         word-break:break-all;">
+                                {{ENLACE_MODIFICACION}}
+                            </p>
+
+                        </td>
+                    </tr>
+
+                    <!-- ============================================================
+                         FOOTER
+                         ============================================================ -->
+                    <tr>
+                        <td align="center"
+                            style="padding:32px 48px;
+                        border-top:1px solid #e8e2d9;">
+
+                            <p style="margin:0 0 8px 0;
+                         font-family:Georgia, 'Times New Roman', serif;
+                         font-size:11px;
+                         letter-spacing:3px;
+                         text-transform:uppercase;
+                         color:#b89a6a;">
+                                Almudena &amp; Ignacio
+                            </p>
+
+                            <p style="margin:0;
+                         font-family:Georgia, 'Times New Roman', serif;
+                         font-size:11px;
+                         letter-spacing:2px;
+                         color:#c0b8b0;">
+                                18 de julio de 2026 &middot; Madrid
+                            </p>
+
+                            <p style="margin:16px 0 0 0;
+                         font-family:Georgia, 'Times New Roman', serif;
+                         font-size:11px;
+                         color:#c0b8b0;
+                         line-height:1.6;">
+                                Real Colegiata de San Isidro &middot; Finca Astilbe
+                            </p>
+
+                        </td>
+                    </tr>
+
+                </table>
+                <!-- FIN CONTENEDOR PRINCIPAL -->
+
+            </td>
+        </tr>
+    </table>
+    <!-- FIN WRAPPER EXTERIOR -->
+
+</body>
+</html>

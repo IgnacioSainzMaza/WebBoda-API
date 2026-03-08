@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="WebBoda.API/WebBoda.API.csproj" />
+  <Project Path="WebBoda.Application/WebBoda.Application.csproj" />
+  <Project Path="WebBoda.Domain/WebBoda.Domain.csproj" />
+  <Project Path="WebBoda.Infrastructure/WebBoda.Infrastructure.csproj" />
+</Solution>
